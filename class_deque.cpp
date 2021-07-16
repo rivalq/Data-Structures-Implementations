@@ -38,7 +38,7 @@ public:
      }
      //root itself will be front
      // root->right will be back
-     void push_back(int val){
+     void push_back(T val){
      	 if(root == NULL){
      	 	root = create(val);
      	 	root->left = root;
@@ -54,7 +54,7 @@ public:
          sz++;
          return; 
      }
-     void push_front(int val){
+     void push_front(T val){
      	 if(root == NULL){
      	 	root = create(val);
      	 	root->left = root;
